@@ -1,0 +1,11 @@
+sudo: false
+language: cpp
+compiler:
+    - clang
+addons:
+    apt:
+        packages:
+            - time
+            - libboost-all-dev
+script:
+    - make test
